@@ -1,4 +1,4 @@
-#mat2obj.py
+#mat2obj.py, put together 2019, read below for sources
 #How to run:
 #import mat2obj
 #mat2obj.filename('filename')
