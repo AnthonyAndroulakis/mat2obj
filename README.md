@@ -3,9 +3,9 @@ Loads .mat MatLab files in a similar syntax to MatLab's.
       
 # Prerequisites:
 python3       
-python modules:
-    +numpy     
-    +scipy     
+python modules:     
++ numpy     
++ scipy     
      
 # How to run:
 `import mat2obj`   
