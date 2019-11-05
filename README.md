@@ -1,6 +1,11 @@
 # mat2obj
 Loads .mat MatLab files in a similar syntax to MatLab's.   
       
+# Prerequisites:
+python3       
+numpy     
+scipy     
+     
 # How to run:
 `import mat2obj`   
 `myMat=mat2obj.filename('filename')`   
