@@ -14,7 +14,7 @@
 # https://stackoverflow.com/a/6573827
 #
 '''
-At any point, you can find which options are available by setting a variable called matobj to your object IN QUOTATIONS and running the command below:
+At any point, you can find which options are available by setting a variable called matobj equal to your object IN QUOTATIONS and running the command below:
 list(eval('{key: value for key, value in '+matobj+'.__dict__.items() if not key.startswith("__") and not key.startswith("_")}.keys()'))
 
 Examples for defining matobj include but are definitely not limited to:
