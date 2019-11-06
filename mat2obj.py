@@ -1,4 +1,4 @@
-#mat2obj.py, put together 2019, read below for sources
+#mat2obj.py, wrote 2 functions, found 1 function & 1 class on stackoverflow, read below for sources
 #How to run:
 #import mat2obj
 #mat2obj.filename('filename')
@@ -7,7 +7,7 @@
 #mat2obj.loadmat('filename')
 #
 #
-# function loadmat is from stackoverflow, written by users cs01 and jpapon here:
+# function loadmat is from stackoverflow, written by users cs01 and jpapon:
 # https://stackoverflow.com/a/29126361
 #
 # class Struct is from stackoverflow, written by user andyvanee
@@ -21,7 +21,7 @@ import scipy.io as spio
 import scipy.io
 import numpy as np
 
-class Struct:
+class Struct: #written by user andyvanee (https://stackoverflow.com/a/6573827)
   '''The recursive class for building and representing objects with.'''
   def __init__(self, obj):
     for k, v in obj.items():
@@ -35,7 +35,7 @@ class Struct:
     return '{%s}' % str(', '.join('%s : %s' % (k, repr(v)) for
       (k, v) in self.__dict__.items()))
 
-def loadmat(filename):
+def loadmat(filename): #written by users cs01 and jpapon (https://stackoverflow.com/a/29126361)
     '''
     this function should be called instead of direct spio.loadmat
     as it cures the problem of not properly recovering python dictionaries
