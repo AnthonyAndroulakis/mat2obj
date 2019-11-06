@@ -11,7 +11,7 @@ python modules:
 `import mat2obj`   
 `myMat=mat2obj.filename('filename')`   
       
-# How to use:
+# How to use output:
 `myMat.DWI`   
 `myMat.DWI.hdr`   
 `myMat.DWI.dat`    
