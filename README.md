@@ -1,5 +1,5 @@
 # mat2obj
-Loads .mat MatLab files in a similar syntax to MatLab's.   
+Loads .mat MatLab files in Python in a similar syntax to MatLab's.   
       
 # Prerequisites:
 python3       
