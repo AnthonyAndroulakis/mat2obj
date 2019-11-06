@@ -19,14 +19,13 @@ python modules:
 `myMat.DWI.hdr.private`     
        
 # How to get options (available paths) (in list format):
-set a variable called __matobj__ equal to your object IN QUOTATIONS and run the command below:         
-`list(eval('{key: value for key, value in '+matobj+'.__dict__.items() if not key.startswith("__") and not key.startswith("_")}.keys()'))`
+`mat2obj.options(matobj)`
        
-## Examples for defining matobj:       
-`matobj="myMat"`     
-`matobj="myMat.DWI"`   
-`matobj="myMat.DWI.hdr"`   
-`matobj="myMat.DWI.hdr.private"`   
+## Examples for defining matobj (input is of type <class 'mat2obj.Struct'>):       
+`matobj=myMat`     
+`matobj=myMat.DWI`   
+`matobj=myMat.DWI.hdr`   
+`matobj=myMat.DWI.hdr.private`   
 
-# Extra: (.mat to dictionary):
+# Extra (.mat to dictionary):
 `myDict=mat2obj.loadmat('filename')` 
