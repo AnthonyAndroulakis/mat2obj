@@ -1,4 +1,4 @@
-#mat2obj.py, wrote 2 functions, found 1 function & 1 class on stackoverflow, read below for sources
+#mat2obj.py, wrote 2 functions, found 1 function & 1 class on stackoverflow, read below for sources, 2019
 #How to run:
 #import mat2obj
 #mat2obj.filename('filename')
