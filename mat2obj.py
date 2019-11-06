@@ -85,7 +85,7 @@ def loadmat(filename):
     data = scipy.io.loadmat(filename, struct_as_record=False, squeeze_me=True)
     return _check_keys(data)
 
-def filename(file):
+def filename(file): #combines function loadmat and class Struct
     if file[-4:]=='.mat':
       loadoutput=loadmat(file)
       structoutput=Struct(loadoutput)
