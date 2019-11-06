@@ -18,7 +18,7 @@ python modules:
 `myMat.DWI.dat[3][2][5]` #assumming dat is a 3D matrix     
 `myMat.DWI.hdr.private`     
        
-# How to get options (in list format):
+# How to get options (available paths) (in list format):
 set a variable called __matobj__ equal to your object IN QUOTATIONS and run the command below:         
 `list(eval('{key: value for key, value in '+matobj+'.__dict__.items() if not key.startswith("__") and not key.startswith("_")}.keys()'))`
        
