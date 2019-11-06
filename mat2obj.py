@@ -85,7 +85,7 @@ def loadmat(filename): #written by users cs01 and jpapon (https://stackoverflow.
     data = scipy.io.loadmat(filename, struct_as_record=False, squeeze_me=True)
     return _check_keys(data)
 
-def filename(file): #combines function loadmat and class Struct
+def filename(file): #combines function loadmat and class Struct, I wrote this
     if file[-4:]=='.mat':
       loadoutput=loadmat(file)
       structoutput=Struct(loadoutput)
@@ -93,7 +93,7 @@ def filename(file): #combines function loadmat and class Struct
     else:
       print('Only .mat files are accepted.')
 
-def options(matobj): #find options of object, input is your object of type <class 'mat2obj.Struct'>
+def options(matobj): #find options of object, input is your object of type <class 'mat2obj.Struct'>, I wrote this
     try:
         dictmatobj=dict(zip(matobj.__dict__, map(str, matobj.__dict__.values())))
         return list(eval('{key: value for key, value in '+str(dictmatobj)+".items()"+' if not key.startswith("__") and not key.startswith("_")}.keys()'))
