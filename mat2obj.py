@@ -3,7 +3,7 @@
 #import mat2obj
 #mat2obj.filename('filename')
 #
-#How to convert mat 2 dictionary:
+#How to convert mat to dictionary:
 #mat2obj.loadmat('filename')
 #
 #
@@ -100,3 +100,10 @@ def filename(file):
       return structoutput
     else:
       print('Only .mat files are accepted.')
+
+def options(matobj): #find options of object, input is your object of type <class 'mat2obj.Struct'>
+    try:
+        dictmatobj=dict(zip(matobj.__dict__, map(str, matobj.__dict__.values())))
+        return list(eval('{key: value for key, value in '+str(dictmatobj)+".items()"+' if not key.startswith("__") and not key.startswith("_")}.keys()'))
+    except:
+        print("Incorrect type. Correct input type is of <class 'mat2obj.Struct'>.")
