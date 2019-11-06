@@ -21,11 +21,11 @@ python modules:
 # How to get options (available paths) (in list format):
 `mat2obj.options(matobj)`
        
-## Examples for defining matobj (input is of type <class 'mat2obj.Struct'>):       
-`matobj=myMat`     
-`matobj=myMat.DWI`   
-`matobj=myMat.DWI.hdr`   
-`matobj=myMat.DWI.hdr.private`   
+## Examples for running mat2obj.options (input is of type <class 'mat2obj.Struct'>):       
+`mat2obj.options(myMat)`     
+`mat2obj.options(myMat.DWI)`   
+`mat2obj.options(myMat.DWI.hdr)`   
+`mat2obj.options(myMat.DWI.hdr.private)`   
 
 # Extra (.mat to dictionary):
 `myDict=mat2obj.loadmat('filename')` 
