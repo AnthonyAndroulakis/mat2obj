@@ -7,23 +7,15 @@
 #mat2obj.loadmat('filename')
 #
 #
-# loadmat is from stackoverflow, written by users cs01 and jpapon here:
+# function loadmat is from stackoverflow, written by users cs01 and jpapon here:
 # https://stackoverflow.com/a/29126361
 #
 # class Struct is from stackoverflow, written by user andyvanee
 # https://stackoverflow.com/a/6573827
 #
-'''
-At any point, you can find which options are available by setting a variable called matobj equal to your object IN QUOTATIONS and running the command below:
-list(eval('{key: value for key, value in '+matobj+'.__dict__.items() if not key.startswith("__") and not key.startswith("_")}.keys()'))
-
-Examples for defining matobj include but are definitely not limited to:
-matobj="myMat"
-matobj="myMat.DWI"
-matobj="myMat.DWI.hdr"
-matobj="myMat.DWI.hdr.private"
-'''
-
+# I've writted function filename to combine function loadmat and class Struct.
+# I've also written function option so you can see which options/paths your object has. Example run: options(myMat.DWI.hdr)
+# Output of function option will be a list of your options. Example: ['fname', 'dim', 'dt', 'pinfo', 'mat', 'n', 'descrip', 'private']
 
 import scipy.io as spio
 import scipy.io
