@@ -27,3 +27,6 @@ set a variable called __matobj__ equal to your object IN QUOTATIONS and run the 
 `matobj="myMat.DWI"`   
 `matobj="myMat.DWI.hdr"`   
 `matobj="myMat.DWI.hdr.private"`   
+
+# Extra: (.mat to dictionary):
+`myDict=mat2obj.loadmat('filename')` 
